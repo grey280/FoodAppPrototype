@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZB-Hc-6Hg">
-                                <rect key="frame" x="372" y="125" width="22" height="22"/>
+                                <rect key="frame" x="372" y="120" width="22" height="22"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basal Metabolic Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-C0-KXa">
                                 <rect key="frame" x="20" y="178" width="182" height="24"/>
@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSY-eo-9XR">
-                                <rect key="frame" x="372" y="201" width="22" height="22"/>
+                                <rect key="frame" x="372" y="196" width="22" height="22"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Daily Energy Expenditure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhv-vx-WE5">
                                 <rect key="frame" x="20" y="254" width="263" height="24"/>
@@ -71,7 +71,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-ym-s2J">
-                                <rect key="frame" x="372" y="277" width="22" height="22"/>
+                                <rect key="frame" x="372" y="272" width="22" height="22"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Calorie needs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFD-Ci-Nyv">
+                                <rect key="frame" x="20" y="330" width="167" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,527 Calories per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePh-YZ-5K9">
+                                <rect key="frame" x="70" y="358" width="254" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da2-Ie-gSy">
+                                <rect key="frame" x="372" y="348" width="22" height="22"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,106 Calories per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlO-21-dEs">
                                 <rect key="frame" x="70" y="206" width="251" height="32"/>
@@ -82,25 +97,38 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="da2-Ie-gSy" firstAttribute="centerX" secondItem="OZB-Hc-6Hg" secondAttribute="centerX" id="3Jj-gZ-kXm"/>
+                            <constraint firstItem="ZSY-eo-9XR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ffq-C0-KXa" secondAttribute="trailing" constant="16" id="3q4-Dj-VeO"/>
                             <constraint firstItem="Yhv-vx-WE5" firstAttribute="top" secondItem="dlO-21-dEs" secondAttribute="bottom" constant="16" id="4pX-EY-Mot"/>
                             <constraint firstItem="onU-yi-TGF" firstAttribute="top" secondItem="7ep-7A-dvg" secondAttribute="bottom" constant="4" id="61N-pw-LeS"/>
-                            <constraint firstItem="OZB-Hc-6Hg" firstAttribute="top" secondItem="7ep-7A-dvg" secondAttribute="bottom" constant="-1" id="AdR-qq-nhQ"/>
+                            <constraint firstItem="OZB-Hc-6Hg" firstAttribute="top" secondItem="7ep-7A-dvg" secondAttribute="bottom" constant="-6" id="AdR-qq-nhQ"/>
                             <constraint firstItem="7ep-7A-dvg" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="14" id="Ebu-nJ-rSU"/>
                             <constraint firstItem="dlO-21-dEs" firstAttribute="top" secondItem="Ffq-C0-KXa" secondAttribute="bottom" constant="4" id="JIi-vg-Spp"/>
+                            <constraint firstItem="ZSY-eo-9XR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dlO-21-dEs" secondAttribute="trailing" constant="16" id="KH0-cB-oRX"/>
+                            <constraint firstItem="RFD-Ci-Nyv" firstAttribute="leading" secondItem="Yhv-vx-WE5" secondAttribute="leading" id="M18-WV-Iiw"/>
+                            <constraint firstItem="da2-Ie-gSy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ePh-YZ-5K9" secondAttribute="trailing" constant="16" id="QMz-Ti-A0Y"/>
                             <constraint firstItem="V0X-ym-s2J" firstAttribute="centerX" secondItem="OZB-Hc-6Hg" secondAttribute="centerX" id="Qdz-FV-lsc"/>
+                            <constraint firstItem="da2-Ie-gSy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RFD-Ci-Nyv" secondAttribute="trailing" constant="16" id="TmZ-yq-4AT"/>
+                            <constraint firstItem="OZB-Hc-6Hg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7ep-7A-dvg" secondAttribute="trailing" constant="16" id="V2S-uD-tGj"/>
                             <constraint firstItem="ZSY-eo-9XR" firstAttribute="centerX" secondItem="OZB-Hc-6Hg" secondAttribute="centerX" id="ViC-AE-aXW"/>
-                            <constraint firstItem="V0X-ym-s2J" firstAttribute="top" secondItem="Yhv-vx-WE5" secondAttribute="bottom" constant="-1" id="WJv-EJ-0UH"/>
+                            <constraint firstItem="V0X-ym-s2J" firstAttribute="top" secondItem="Yhv-vx-WE5" secondAttribute="bottom" constant="-6" id="WJv-EJ-0UH"/>
+                            <constraint firstItem="OZB-Hc-6Hg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="onU-yi-TGF" secondAttribute="trailing" constant="16" id="WbL-4K-Quz"/>
                             <constraint firstItem="onU-yi-TGF" firstAttribute="leading" secondItem="7ep-7A-dvg" secondAttribute="trailing" constant="-98" id="Z0L-ai-Wxj"/>
+                            <constraint firstItem="da2-Ie-gSy" firstAttribute="top" secondItem="RFD-Ci-Nyv" secondAttribute="bottom" constant="-6" id="alU-Bl-3ft"/>
                             <constraint firstItem="Gzg-Ke-BAM" firstAttribute="top" secondItem="Yhv-vx-WE5" secondAttribute="bottom" constant="4" id="avi-L3-ajS"/>
-                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="onU-yi-TGF" secondAttribute="trailing" constant="8" id="bSO-Wx-BlZ"/>
+                            <constraint firstItem="V0X-ym-s2J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yhv-vx-WE5" secondAttribute="trailing" constant="16" id="cKJ-OR-zRa"/>
                             <constraint firstItem="Ffq-C0-KXa" firstAttribute="top" secondItem="onU-yi-TGF" secondAttribute="bottom" constant="16" id="fpD-1F-xgW"/>
-                            <constraint firstItem="ZSY-eo-9XR" firstAttribute="top" secondItem="Ffq-C0-KXa" secondAttribute="bottom" constant="-1" id="frg-Qm-yWv"/>
+                            <constraint firstItem="ZSY-eo-9XR" firstAttribute="top" secondItem="Ffq-C0-KXa" secondAttribute="bottom" constant="-6" id="frg-Qm-yWv"/>
                             <constraint firstItem="Yhv-vx-WE5" firstAttribute="leading" secondItem="Ffq-C0-KXa" secondAttribute="leading" id="jJY-DF-Zgp"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="OZB-Hc-6Hg" secondAttribute="trailing" constant="20" id="jVm-mL-oRn"/>
+                            <constraint firstItem="ePh-YZ-5K9" firstAttribute="leading" secondItem="Gzg-Ke-BAM" secondAttribute="leading" id="jcQ-NK-AOX"/>
                             <constraint firstItem="Gzg-Ke-BAM" firstAttribute="leading" secondItem="dlO-21-dEs" secondAttribute="leading" id="mqX-rE-9sa"/>
+                            <constraint firstItem="RFD-Ci-Nyv" firstAttribute="top" secondItem="Gzg-Ke-BAM" secondAttribute="bottom" constant="16" id="nyX-94-lsi"/>
                             <constraint firstItem="7ep-7A-dvg" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="20" id="ofj-Sa-xAJ"/>
                             <constraint firstItem="Ffq-C0-KXa" firstAttribute="leading" secondItem="7ep-7A-dvg" secondAttribute="leading" id="qei-dE-0Qo"/>
                             <constraint firstItem="dlO-21-dEs" firstAttribute="leading" secondItem="onU-yi-TGF" secondAttribute="leading" id="uOS-hQ-4KT"/>
+                            <constraint firstItem="V0X-ym-s2J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gzg-Ke-BAM" secondAttribute="trailing" constant="16" id="wUA-GH-xVg"/>
+                            <constraint firstItem="ePh-YZ-5K9" firstAttribute="top" secondItem="RFD-Ci-Nyv" secondAttribute="bottom" constant="4" id="whV-9z-7L0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
